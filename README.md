@@ -1,5 +1,8 @@
 # sar-rgb-spectral-decomposition
-Matlab software for generating the Doppler Decomposition of Synthetic Aperture Radar (SAR) images by splitting the full Doppler bandwidth in 3 sub-bands, assigning colours red, green and blue to the lower, medium, and upper doppler frequency bands. For a universal interpretation by colour blind users, different colourmaps with a variation palette of triplets of colours are included, together with their estimated visualisations.
+Matlab software for generating the Doppler Decomposition of Synthetic Aperture Radar (SAR) images by splitting the full Doppler bandwidth in 3 sub-bands, assigning colours red, green and blue to the lower, medium, and upper doppler frequency bands. For a universal interpretation by colour-blind users, different colourmaps with a variation palette of triplets of colours are included, together with their estimated visualisations.
+<p align="center">
+  <img src="/sar_vs_rgb.png" alt="comparison of beamwidths of SAR and RGB Decomposition">
+</p>
 
 ## Scope
 The repository contains Matlab functions for generating the RGB SAR Doppler Decomposition, different colourmaps with triplets of colours, and an estimator of the visualisation by colour blind interpreters with protanopia (insensitivity to red light), deuteranopia (to green) and tritanopia (to blue).
@@ -66,10 +69,10 @@ Bw = 30; % [Hz]
 ```
 then the band to cover with the 3 sub-bands of decomposition is the interval `[-Bw/2, +Bw/2] = [-15, +15]`, with non-overlapping or overlapping bands.
 
-####Non-overlapping bands:
-
-  .......\______Red______/\_____Green_____/\______Blue_____/..........
--PRF/2  -Bw/2                     0                      +Bw/2   +PRF/2
+#### Non-overlapping bands:
+<p align="center">
+  <img src="/non_overlapping_bands.svg" width="230" height="150" alt="spectrum without overlapping bands">
+</p>
 
 For non-overlapping bands seamlessly covering the interval [-Bw/2, +Bw/2], the three sub-bandwidths would be `SBw1 = SBw2 = SBw3 = Bw/3 = 10 Hz`, and the central frequencies `[Fc1, Fc2, Fc3] = [-Bw/3, 0, +Bw/3] = [-10, 0, +10] Hz`.
 For a sampling frequency `Fs = 62.5 Hz`, the total available band would be `[-Fs/2, +Fs/2]`. The input parameters `ratioAz` and `percentageShift` would be:
@@ -107,12 +110,10 @@ ratioAz = Fs./[SBw, SBw, SBw]; % [12 12 12] [-]
 percentageShift = 100*[Fc1, Fc2, Fc3]/Fs; % [-8, 0, 8] [%]
 ```
 
-#### Overlapping bands:
-
-  .......\_________Red_______/         \_______Blue________/..........
-  .......          \____________Green____________/         ........... 
-  .......          \__Yellow_/         \__Cyan___/          .......... 
--PRF/2  -Bw/2                     0                      +Bw/2   +PRF/2
+#### Overlapping bands
+<p align="center">
+  <img src="/overlapping_bands.svg" width="230" height="150" alt="spectrum with overlapping bands">
+</p>
 
 For overlapping sub-bands seamlessly covering the interval `[-Bw/2, +Bw/2]`, in a way that the overlapped intervals have the same width as the intervals without overlapping, the three sub-bandwidths would be  `SBw1 = SBw3 = 0.4Bw = 12 Hz` and `SBw2 = 0.6Bw = 18 Hz`, and the central frequencies `[Fc1, Fc2, Fc3] = [-0.3Bw, 0, +0.3Bs] = [-9, 0, +9] Hz`
 For a sampling frequency `Fs = 62.5 Hz`, the total available band would be `[-Fs/2, +Fs/2]`. The input parameters `ratioAz` and `percentageShift` would be:
@@ -166,6 +167,10 @@ function [readable_colourmap,...
     display_single_palette_flag,...
     display_multiple_palette_flag)
 ```
+<p align="center">
+  <img src="/colourmaps/colourmaps.png" alt="colourmaps and interpretation for colour-blind interpreters">
+</p>
+
 Attempt to build an universally readable colourmap for RGB SAR Doppler Decomposition images, by using three colours whose combinations can be distinguished for colour-blindness due to protanopia (lack of sensitivity to red), deuteranopia (green) and tritanopia (blue).
 
 The function creates templates with the variation palette of a triplet of colours according to the input code `palette_code`, each colour to represent each of the three bands of a Frequency Decomposition analysis. The palette of each template has 8 colour shades related to the intensity of the frequency band: the maximum intensity of each band is represented by the primary colour of that band, and the minimum intensity by a dark version of this primary colour.
@@ -208,7 +213,7 @@ If The flag `kovesi_modification_flag` is active it modifies the pure red, green
 To display colourmaps with the indivudual interpolated palettes as expected to be seen according to each blindness type, activate the input boolean flag `display_single_palette_flag`. To display in one image the colourmaps of the single interpolated palette for each blindness type, and in another image the mixing-circles with the colour combinations of the first colour from the output templates, activate the input boolean flag `display_multiple_palette_flag`.
 
 ### Examples
-#####Triplet with modified R-G-B primary colours
+##### Triplet with modified R-G-B primary colours
 ```MATLAB
 % Triplet with modified Red-Green-Blue as primary colours
 % Palette code
@@ -294,7 +299,7 @@ blind_conversion_method = 4; % the recommended is the fourth
 new_colours = uint8(rgb_to_colour_blindness(primary_colours, blindness_type, blind_conversion_method));  % [0...255]
 ```
 ### References
-#####General on colour blindness:
+##### General on colour blindness:
 1. https://daltonlens.org/understanding-cvd-simulation/
 2. http://www.vischeck.com/
 3. http://www.daltonize.org/
@@ -306,7 +311,7 @@ new_colours = uint8(rgb_to_colour_blindness(primary_colours, blindness_type, bli
 2. https://github.com/joergdietrich/daltonize/tree/main
 3. https://github.com/MaPePeR/jsColorblindSimulator
 
-#####Visual references:
+##### Visual references:
 1. [DaltonLens](https://daltonlens.org/opensource-cvd-simulation/): a great number of displays according to the several algorithms.
 2. [ConvertingColors](https://convertingcolors.com/rgb-color-255_0_0.html): Coblis Version2 (see https://daltonlens.org/opensource-cvd-simulation/)
 3. [Coblis v2](https://www.color-blindness.com/coblis-color-blindness-simulator/): Coblis Version2
