@@ -283,7 +283,7 @@ G. M. Machado, M. M. Oliveira and L. A. F. Fernandes, "[A Physiologically-based 
 3. **Method 3**, `conversion_method = 3`:
 Brettel, H., Vienot, F., & Mollon, J. D. (1997). [Computerized simulation of color appearance for dichromats](http://vision.psychol.cam.ac.uk/jdmollon/papers/Dichromatsimulation.pdf). Journal of the Optical Society of America. A, Optics, Image Science, and  Vision, 14(10), 2647–2655. https://doi.org/10.1364/josaa.14.002647
 3. **Method 4**, `conversion_method = 4`, **our preferred method** because the article is open access, explained [here](https://daltonlens.org/understanding-cvd-simulation/#The-simplification-of-Vi%C3%A9not-1999-for-protanopes-and-deuteranopes "here") in the website https://daltonlens.org/:
-Viénot, F., Brettel, H. and Mollon, J.D. (1999), [Digital video colourmaps for checking the legibility of displays by dichromats](https://doi.org/10.1002/(SICI)1520-6378(199908)24:4%3C243::AID-COL5%3E3.0.CO;2-3). Color Res. Appl., 24: 243-252. https://doi.org/10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3.
+Viénot, F., Brettel, H. and Mollon, J.D. (1999), [Digital video colourmaps for checking the legibility of displays by dichromats](https://doi.org/10.1002/(SICI)1520-6378(199908)24:4%3C243::AID-COL5%3E3.0.CO;2-3). Color Res. Appl., 24: 243-252. http<area>s://doi.org/10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3.
 
 ### Example
 
