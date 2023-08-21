@@ -14,7 +14,8 @@ of the three colours. This is explained in the article (yet to be submitted)
 Alvaro Arenas-Pingarrón, Alex M. Brisbourne, Carlos Martín, Hugh F.J. Corr, Carl Robinson, Tom A. Jordan, Paul V. Brennan: ‘A Generalised Representation Framework of Synthetic Aperture Radar Images for Improved Englacial Observations’, EGU The Cryosphere.
 
 The SAR products generated from these processing-parameter files ('.m') are in netCDF files ('.nc') archived by the UK Polar Data Centre (UK PDC)
--------------- Data DOI to be added --------------
+(TBC)
+Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 If the decomposition is applied on the Doppler spectrum, the new image contains the directional information
 related to the Doppler frequencies: positive frequencies when the radar approaches the target, near-zero
@@ -73,7 +74,8 @@ domain, which is an alternative for representing the SAR images by decomposing t
 three sub-bands that will be overlapped into an RGB image.
 
 The SAR products generated for this datasets are in netCDF files ('.nc') archived by the UK Polar Data Centre (UK PDC)
--------------- Data DOI to be added --------------
+(TBC)
+Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 The data here included belong to the next two projects:
 	1) FISS (Filchner Ice Shelf System), in 2016/17 season. The data set corresponds to a section of the
@@ -95,7 +97,7 @@ Polarimetric, DoA and 3D-mapping products are not covered here, but they are bas
 
 Each SAR product is matched with a file with the processing parameters written in Matlab language ('.m'),
 accessed from GitHub by following the external link
------------------ GITHUB LINK TO BE ADDED -----------------
+https://github.com/antarctica/sar-rgb-spectral-decomposition/tree/main/sar_rgb_doppler_decomposition_dataset
 
 ******************************
 ** Organisation of products **
@@ -109,7 +111,8 @@ and flight T11 in season 2019/20). For a wider list of products see
 https://doi.org/10.5285/FAAC4156-047D-47BA-9E31-1A4F766BFDF8
 
 The SAR products generated for this datasets are in netCDF files ('.nc') archived by the UK Polar Data Centre (UK PDC)
--------------- Data DOI to be added --------------
+(TBC)
+Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 sar_rgb_doppler_decomposition_dataset
 |
@@ -124,8 +127,8 @@ This folder contains two kind of SAR products:
 
 Each product (one RC image from season 2016/17, and one SAR image from season 2019/20) is paired with the diary file
 ('.txt') trimmed to the content of interest, and a parameter file ('.m', in Matlab language) with the processing
-parameters. The '.m' file is accessed from GitHub by following the external link
------------------ GITHUB LINK TO BE ADDED -----------------
+parameters. The '.m' files are accessed from GitHub by following the external link
+https://github.com/antarctica/sar-rgb-spectral-decomposition/tree/main/sar_rgb_doppler_decomposition_dataset
 
 The file names contain two numbers related to the first and last trace of the along-track locations. A trace is
 the time interval for measuring the along-track time during the flight. In season 16/17, a trace was 200 milisecons;

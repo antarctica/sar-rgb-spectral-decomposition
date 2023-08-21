@@ -4,7 +4,8 @@ by the British Antarctic Survey (BAS) deep-ice sounding radar PASIN2 (Polarimetr
 in Antarctica.
 
 The SAR products generated for this datasets are in netCDF files ('.nc') archived by the UK Polar Data Centre (UK PDC)
--------------- Data DOI to be added --------------
+(TBC)
+Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 and the processing-parameter files ('.m') in the folder 'sar_rgb_doppler_decomposition_dataset\' of the current repository.
 

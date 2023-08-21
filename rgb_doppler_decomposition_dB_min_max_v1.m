@@ -213,4 +213,3 @@ stringTitle = ['Most intense RGB doppler band (Bw=' num2str(100./ratioAz) '%, Fc
 figure,imagesc(xGrid, yGrid, indColourMax),grid on, colormap([1 0 0; 0 1 0; 0 0 1])
 xlabel('Azimuth (samples)'), ylabel('Range (samples)'), title(stringTitle)
 set(gca,'FontSize',18), set(gcf,'Color','w')
-set(gca,'FontSize',18), set(gcf,'Color','w')

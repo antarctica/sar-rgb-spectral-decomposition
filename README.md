@@ -11,7 +11,7 @@ The repository contains Matlab functions for generating the RGB SAR Doppler Deco
 
 The dataset for testing the algorithm is composed of two SAR images from the [British Antarctic Survey](https://www.bas.ac.uk) (BAS) ice-sounding airborne Synthetic Aperture Radar (SAR) PASIN2 (Polarimetric Airborne Scientific INstrument, mark 2). PASIN2 is an active 150MHz pulsed airborne SAR (Synthetic Aperture Radar) for shallow, englacial and deep subglacial imagery. The SAR products are formatted as [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) (Network Common Data Format) files (.nc) for data sharing. They contain standard data and its associated metadata, including units, conventions, intervals and human-readable descriptions, among others. NetCDF file content can be explored and plotted with software such as the free stand-alone Panoply, and the content can be read and created using available interfaces in C, C++, Java, Fortran, Python, IDL, MATLAB, and R, among others. The NetCDF files are archived by the [UK Polar Data Centre](https://www.bas.ac.uk/data/uk-pdc/) (UK PDC)
 
-(TBC) (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/tbc...
+(TBC) Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 ## Objectives
 The users can:	
