@@ -1,5 +1,6 @@
 # sar-rgb-spectral-decomposition
 Matlab software for generating the Doppler Decomposition of Synthetic Aperture Radar (SAR) images by splitting the full Doppler bandwidth in 3 sub-bands, assigning colours red, green and blue to the lower, medium, and upper doppler frequency bands. For a universal interpretation by colour-blind users, different colourmaps with a variation palette of triplets of colours are included, together with their estimated visualisations.
+Cite the code: [![DOI](https://zenodo.org/badge/667776596.svg)](https://zenodo.org/badge/latestdoi/667776596)
 <p align="center">
   <img src="/sar_vs_rgb.png" alt="comparison of beamwidths of SAR and RGB Decomposition">
 </p>
