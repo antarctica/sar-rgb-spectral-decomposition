@@ -10,11 +10,11 @@ Cite the code: [![DOI](https://zenodo.org/badge/667776596.svg)](https://zenodo.o
 ## Scope
 The repository contains Matlab functions for generating the RGB SAR Doppler Decomposition, different colourmaps with triplets of colours, and an estimator of the visualisation by colour blind interpreters with protanopia (insensitivity to red light), deuteranopia (to green) and tritanopia (to blue).
 
-(To be submitted) Alvaro Arenas-Pingarrón, Alex M. Brisbourne, Carlos Martín, Hugh F.J. Corr, Carl Robinson, Tom A. Jordan, Paul V. Brennan: 'A Generalised Representation Framework of Synthetic Aperture Radar Images for Improved Englacial Observations', EGU The Cryosphere.
+(To be submitted) Alvaro Arenas-Pingarrón, Alex M. Brisbourne, Carlos Martín, Hugh F.J. Corr, Carl Robinson, Tom A. Jordan, Paul V. Brennan: 'An Alternative Representation of Synthetic Aperture Radar Images for Englacial Observations', EGU The Cryosphere.
 
 The dataset for testing the algorithm is composed of two SAR images from the [British Antarctic Survey](https://www.bas.ac.uk) (BAS) ice-sounding airborne Synthetic Aperture Radar (SAR) PASIN2 (Polarimetric Airborne Scientific INstrument, mark 2). PASIN2 is an active 150MHz pulsed airborne SAR (Synthetic Aperture Radar) for shallow, englacial and deep subglacial imagery. The SAR products are formatted as [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) (Network Common Data Format) files (.nc) for data sharing. They contain standard data and its associated metadata, including units, conventions, intervals and human-readable descriptions, among others. NetCDF file content can be explored and plotted with software such as the free stand-alone Panoply, and the content can be read and created using available interfaces in C, C++, Java, Fortran, Python, IDL, MATLAB, and R, among others. The NetCDF files are archived by the [UK Polar Data Centre](https://www.bas.ac.uk/data/uk-pdc/) (UK PDC)
 
-(TBC) Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Title to be defined (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
+Arenas Pingarron, A., Brisbourne, A., Corr, H., Jordan, T., Robinson, C., Martin, C., Nicholls, K., & Smith, A. (2023). Ice-sounding airborne synthetic aperture radar depth profiles from Recovery Ice Stream 2016/17 and Rutford Ice Strem 2019/20 to test the RGB-Doppler-Decomposition method. (Version 1.0) [Data set]. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/40c2f86b-1a02-4106-934a-42769682df66
 
 ## Objectives
 The users can:	
